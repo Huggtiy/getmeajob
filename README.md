@@ -9,10 +9,12 @@ LinkedIn/Indeed, no servers, no paid services.
 ```
 config.json ──> aggregator.py ──> fetchers (USAJobs / Greenhouse / Lever / RSS)
                      │
-                     ├──> keyword filter (include / exclude, whole-word)
-                     ├──> jobs.db      (SQLite, dedup memory between runs)
+                     ├──> keyword + location filter (whole-word, case-insensitive)
                      └──> docs/jobs.json ──> GitHub Pages board (docs/index.html)
 ```
+
+Stateless by design: every run re-fetches everything and fully rewrites
+`docs/jobs.json`. Nothing is stored between runs.
 
 ## How it works
 
@@ -20,14 +22,13 @@ config.json ──> aggregator.py ──> fetchers (USAJobs / Greenhouse / Lever
    07:00 UTC**, on **manual dispatch**, and on **any push to `main` that
    changes `config.json`** (so saving a new config re-aggregates immediately).
 2. `aggregator.py` reads `config.json`, calls every enabled fetcher in
-   `fetchers.py`, filters by keyword, and dedups against `jobs.db` (committed
-   back to the repo so "new" stays meaningful between runs).
+   `fetchers.py`, and filters by keyword and location.
 3. The full, filtered, currently-open job list is written to `docs/jobs.json`
    (newest first, with a `generated_at` timestamp) and committed with
-   `[skip ci]`.
+   `[skip ci]` — that commit is what refreshes the website.
 4. GitHub Pages serves `/docs`: `index.html` is the board,
    `config.html` is the configuration builder.
-5. Optionally, newly seen roles are emailed via SMTP.
+5. Optionally, the current list is emailed via SMTP.
 
 ## The config.json contract
 
@@ -78,7 +79,7 @@ commits, so saving is a two-click commit:
 
 ## Adding a new source
 
-Two small steps — filtering, dedup, storage and the site never change:
+Two small steps — filtering and the site never change:
 
 1. In `fetchers.py`, write one function that takes its config block and
    returns a list of standard job dicts, then register it:

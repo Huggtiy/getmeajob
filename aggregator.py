@@ -3,9 +3,12 @@
 
 Pipeline (all driven by config.json — no keywords or sources live in code):
 
-    config.json -> fetch enabled sources -> keyword filter -> dedup vs
-    SQLite (jobs.db) -> write docs/jobs.json for the Pages site -> print
-    a summary -> optionally email newly seen roles via SMTP.
+    config.json -> fetch enabled sources -> keyword + location filter ->
+    write docs/jobs.json for the Pages site -> print a summary ->
+    optionally email the current list via SMTP.
+
+Stateless by design: every run re-fetches everything and fully rewrites
+docs/jobs.json. Nothing is stored between runs.
 
 Filter rules (case-insensitive, whole-word):
   * drop a job if its TITLE matches any exclude keyword;
@@ -14,17 +17,12 @@ Filter rules (case-insensitive, whole-word):
   * drop a job whose LOCATION matches no include_locations entry —
     unless the location is empty/unstated (common in RSS feeds), which
     is kept so feed-only sources aren't wiped out.
-
-jobs.db remembers every URL ever seen, so "new this run" stays meaningful
-between daily GitHub Actions runs. docs/jobs.json always contains the full
-currently-open, filtered list.
 """
 
 import json
 import os
 import re
 import smtplib
-import sqlite3
 import sys
 from datetime import datetime, timezone
 from email.mime.text import MIMEText
@@ -34,7 +32,6 @@ from fetchers import FETCHERS
 
 ROOT = Path(__file__).resolve().parent
 CONFIG_PATH = ROOT / "config.json"
-DB_PATH = ROOT / "jobs.db"
 DOCS_DIR = ROOT / "docs"
 
 
@@ -95,40 +92,8 @@ def filter_jobs(jobs, include_pats, exclude_pats, location_pats):
     return kept
 
 
-def open_db():
-    conn = sqlite3.connect(DB_PATH)
-    conn.execute("""CREATE TABLE IF NOT EXISTS jobs (
-        url        TEXT PRIMARY KEY,
-        source     TEXT,
-        title      TEXT,
-        company    TEXT,
-        location   TEXT,
-        posted     TEXT,
-        first_seen TEXT)""")
-    return conn
-
-
-def store_jobs(conn, jobs, now_iso):
-    """Stamp each job with first_seen from the DB; insert and return unseen ones."""
-    new_jobs = []
-    for job in jobs:
-        row = conn.execute("SELECT first_seen FROM jobs WHERE url = ?", (job["url"],)).fetchone()
-        if row:
-            job["first_seen"] = row[0]
-        else:
-            job["first_seen"] = now_iso
-            conn.execute(
-                "INSERT INTO jobs (url, source, title, company, location, posted, first_seen) "
-                "VALUES (?, ?, ?, ?, ?, ?, ?)",
-                (job["url"], job["source"], job["title"], job["company"],
-                 job["location"], job["posted"], job["first_seen"]))
-            new_jobs.append(job)
-    conn.commit()
-    return new_jobs
-
-
 def sort_key(job):
-    return job.get("posted") or (job.get("first_seen") or "")[:10] or "0000-00-00"
+    return job.get("posted") or "0000-00-00"
 
 
 def write_outputs(config, jobs, generated_at):
@@ -141,7 +106,7 @@ def write_outputs(config, jobs, generated_at):
         json.dumps(config, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
 
-def send_email(new_jobs):
+def send_email(jobs):
     host = os.environ.get("SMTP_HOST", "").strip()
     port = os.environ.get("SMTP_PORT", "").strip()
     user = os.environ.get("SMTP_USER", "").strip()
@@ -149,14 +114,14 @@ def send_email(new_jobs):
     if not (host and port and user and password):
         print("Email: SMTP_HOST/PORT/USER/PASS not fully set — skipping.")
         return
-    if not new_jobs:
-        print("Email: no new jobs this run — nothing to send.")
+    if not jobs:
+        print("Email: no matching jobs — nothing to send.")
         return
     to_addr = os.environ.get("EMAIL_TO", user).strip() or user
     lines = [f"* {j['title']} — {j['company']} ({j['location'] or 'location n/a'})\n  {j['url']}"
-             for j in new_jobs]
-    msg = MIMEText(f"{len(new_jobs)} newly seen role(s):\n\n" + "\n\n".join(lines))
-    msg["Subject"] = f"SITREP: {len(new_jobs)} new defence & security roles"
+             for j in jobs]
+    msg = MIMEText(f"{len(jobs)} matching role(s) currently open:\n\n" + "\n\n".join(lines))
+    msg["Subject"] = f"SITREP: {len(jobs)} defence & security roles"
     msg["From"] = user
     msg["To"] = to_addr
     try:
@@ -164,7 +129,7 @@ def send_email(new_jobs):
             smtp.starttls()
             smtp.login(user, password)
             smtp.send_message(msg)
-        print(f"Email: sent {len(new_jobs)} new role(s) to {to_addr}.")
+        print(f"Email: sent {len(jobs)} role(s) to {to_addr}.")
     except Exception as exc:
         print(f"  [warn] email failed: {exc}", file=sys.stderr)
 
@@ -181,11 +146,6 @@ def main():
     unique_jobs = dedup_by_url(raw_jobs)
     filtered = filter_jobs(unique_jobs, include_pats, exclude_pats, location_pats)
 
-    conn = open_db()
-    new_jobs = store_jobs(conn, filtered, now_iso)
-    total_tracked = conn.execute("SELECT COUNT(*) FROM jobs").fetchone()[0]
-    conn.close()
-
     filtered.sort(key=sort_key, reverse=True)
     write_outputs(config, filtered, now_iso)
 
@@ -196,11 +156,9 @@ def main():
     print(f"  fetched      {len(raw_jobs)}")
     print(f"  unique       {len(unique_jobs)}")
     print(f"  matched      {len(filtered)}")
-    print(f"  new this run {len(new_jobs)}")
-    print(f"  tracked (db) {total_tracked}")
     print(f"  wrote docs/jobs.json @ {now_iso}")
 
-    send_email(new_jobs)
+    send_email(filtered)
 
 
 if __name__ == "__main__":

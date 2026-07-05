@@ -113,10 +113,11 @@
   }
 
   function isNew(job) {
-    if (!job.first_seen || !state.generatedAt) return false;
-    var seen = Date.parse(job.first_seen), gen = Date.parse(state.generatedAt);
-    if (isNaN(seen) || isNaN(gen)) return false;
-    return (gen - seen) < 48 * 3600 * 1000; // first seen within the last two runs
+    // Stateless "new": posted within 48h of the aggregation run.
+    if (!job.posted || !state.generatedAt) return false;
+    var posted = Date.parse(job.posted), gen = Date.parse(state.generatedAt);
+    if (isNaN(posted) || isNaN(gen)) return false;
+    return (gen - posted) < 48 * 3600 * 1000;
   }
 
   function showEmpty(html) {
@@ -199,7 +200,7 @@
 
       var date = document.createElement("time");
       date.className = "job-date";
-      date.textContent = fmtDate(j.posted) || fmtDate(j.first_seen) || "";
+      date.textContent = fmtDate(j.posted);
 
       li.appendChild(main);
       li.appendChild(badge);
