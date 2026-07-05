@@ -469,7 +469,7 @@ pre.json-preview {
   .count-readout { grid-column: 1 / -1; padding-top: 2px; }
 }
 
-@media (max-width: 680px) {
+@media (max-width: 900px) {
   .kw-cols { grid-template-columns: 1fr !important; }
 }
 

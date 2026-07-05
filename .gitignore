@@ -1,5 +1,4 @@
-# jobs.db is deliberately NOT ignored — it is committed back by the
-# workflow so dedup state survives between runs.
 __pycache__/
 *.pyc
 .venv/
+jobs.db
