@@ -1,5 +1,2040 @@
 {
- "generated_at": "2026-07-05T17:52:11Z",
- "count": 0,
- "jobs": []
+ "generated_at": "2026-07-05T18:03:20Z",
+ "count": 226,
+ "jobs": [
+  {
+   "source": "greenhouse",
+   "title": "Research Scientist",
+   "company": "Anduril Industries",
+   "location": "Fort Collins, Colorado, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5179749007?gh_jid=5179749007",
+   "posted": "2026-07-02",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Senior Advanced Research Scientist",
+   "company": "Anduril Industries",
+   "location": "Broomfield, Colorado, United States; Fort Collins, Colorado, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5179750007?gh_jid=5179750007",
+   "posted": "2026-07-02",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "System Administrator (Active Clearance), Intelligence Systems",
+   "company": "Anduril Industries",
+   "location": "Reston, Virginia, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5178011007?gh_jid=5178011007",
+   "posted": "2026-07-02",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Product Operations Technical Specialist, Air Defense",
+   "company": "Anduril Industries",
+   "location": "Washington, District of Columbia, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5178736007?gh_jid=5178736007",
+   "posted": "2026-07-01",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Proposals Senior Analyst, International",
+   "company": "Anduril Industries",
+   "location": "Washington, District of Columbia, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5177202007?gh_jid=5177202007",
+   "posted": "2026-07-01",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Research Scientist",
+   "company": "Anduril Industries",
+   "location": "Huntsville, Alabama, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5178392007?gh_jid=5178392007",
+   "posted": "2026-07-01",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Research Scientist",
+   "company": "Anduril Industries",
+   "location": "Broomfield, Colorado, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5178030007?gh_jid=5178030007",
+   "posted": "2026-07-01",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Research Scientist, Battlespace Awareness",
+   "company": "Anduril Industries",
+   "location": "Broomfield, Colorado, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5178310007?gh_jid=5178310007",
+   "posted": "2026-07-01",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Research Scientist, Battlespace Awarenss",
+   "company": "Anduril Industries",
+   "location": "Waltham, Massachusetts, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5178314007?gh_jid=5178314007",
+   "posted": "2026-07-01",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Senior Research Scientist",
+   "company": "Anduril Industries",
+   "location": "Fort Collins, Colorado, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5178398007?gh_jid=5178398007",
+   "posted": "2026-07-01",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Senior Research Scientist",
+   "company": "Anduril Industries",
+   "location": "Fort Collins, Colorado, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5178371007?gh_jid=5178371007",
+   "posted": "2026-07-01",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Senior Research Scientist",
+   "company": "Anduril Industries",
+   "location": "Broomfield, Colorado, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5178401007?gh_jid=5178401007",
+   "posted": "2026-07-01",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Senior Research Scientist, Battlespace Awareness",
+   "company": "Anduril Industries",
+   "location": "Broomfield, Colorado, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5178340007?gh_jid=5178340007",
+   "posted": "2026-07-01",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Senior Research Scientist, Battlespace Awareness",
+   "company": "Anduril Industries",
+   "location": "Waltham, Massachusetts, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5178342007?gh_jid=5178342007",
+   "posted": "2026-07-01",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Service Desk Analyst",
+   "company": "Anduril Industries",
+   "location": "Fort Collins, Colorado, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5159373007?gh_jid=5159373007",
+   "posted": "2026-07-01",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Program Manager, Strategic Supply Chain",
+   "company": "Anduril Industries",
+   "location": "Costa Mesa, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5174583007?gh_jid=5174583007",
+   "posted": "2026-06-30",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Division Operations Analyst, Counter Intrusion",
+   "company": "Anduril Industries",
+   "location": "Irvine, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5171330007?gh_jid=5171330007",
+   "posted": "2026-06-29",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Senior Insider Threat Analyst",
+   "company": "Anduril Industries",
+   "location": "Reston, Virginia, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5174889007?gh_jid=5174889007",
+   "posted": "2026-06-29",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "AI Research Engineer -  3D Computer Vision",
+   "company": "Helsing",
+   "location": "Berlin; London; Munich; Paris",
+   "url": "https://helsing.ai/jobs/4911999101?gh_jid=4911999101",
+   "posted": "2026-06-29",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Deployment Manager, Air Defense",
+   "company": "Anduril Industries",
+   "location": "Irvine, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5175529007?gh_jid=5175529007",
+   "posted": "2026-06-26",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Strategic Sourcing Manager, Electrical",
+   "company": "Anduril Industries",
+   "location": "Costa Mesa, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5175254007?gh_jid=5175254007",
+   "posted": "2026-06-26",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Senior Analyst, Government Rates",
+   "company": "Anduril Industries",
+   "location": "Costa Mesa, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5174048007?gh_jid=5174048007",
+   "posted": "2026-06-25",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Senior Analyst, Government Rates",
+   "company": "Anduril Industries",
+   "location": "Ashville, Ohio, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5174079007?gh_jid=5174079007",
+   "posted": "2026-06-25",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Senior Analyst, Government Rates",
+   "company": "Anduril Industries",
+   "location": "Washington, District of Columbia, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5174077007?gh_jid=5174077007",
+   "posted": "2026-06-25",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Senior Thermal Analyst",
+   "company": "Anduril Industries",
+   "location": "Lexington, Massachusetts, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5174004007?gh_jid=5174004007",
+   "posted": "2026-06-25",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Production Program Manager, Intelligence Systems",
+   "company": "Anduril Industries",
+   "location": "Ashville, Ohio, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5172934007?gh_jid=5172934007",
+   "posted": "2026-06-24",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Program Manager, Edge Compute and Communications",
+   "company": "Anduril Industries",
+   "location": "Costa Mesa, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5173414007?gh_jid=5173414007",
+   "posted": "2026-06-24",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Quality Manager, Intelligence Systems",
+   "company": "Anduril Industries",
+   "location": "Ashville, Ohio, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5173482007?gh_jid=5173482007",
+   "posted": "2026-06-24",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Operations Analyst, Product Operations",
+   "company": "Anduril Industries",
+   "location": "Costa Mesa, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5171996007?gh_jid=5171996007",
+   "posted": "2026-06-23",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Portfolio Operations, Intelligence Systems",
+   "company": "Anduril Industries",
+   "location": "Ashville, Ohio, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5171315007?gh_jid=5171315007",
+   "posted": "2026-06-23",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Senior Tax Analyst",
+   "company": "Anduril Industries",
+   "location": "Costa Mesa, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5170849007?gh_jid=5170849007",
+   "posted": "2026-06-23",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Trainer, Air Defense",
+   "company": "Anduril Industries",
+   "location": "Abu Dhabi, United Arab Emirates",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5171797007?gh_jid=5171797007",
+   "posted": "2026-06-23",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Associate General Counsel, Policy",
+   "company": "Anduril Industries",
+   "location": "Washington, District of Columbia, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5169153007?gh_jid=5169153007",
+   "posted": "2026-06-22",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "ERP - PTC Product Analyst",
+   "company": "Anduril Industries",
+   "location": "Costa Mesa, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5171080007?gh_jid=5171080007",
+   "posted": "2026-06-22",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Financial Analyst II, Corporate Finance",
+   "company": "Anduril Industries",
+   "location": "Costa Mesa, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5169990007?gh_jid=5169990007",
+   "posted": "2026-06-22",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Oracle Project Accountant System Analyst",
+   "company": "Anduril Industries",
+   "location": "Costa Mesa, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5171077007?gh_jid=5171077007",
+   "posted": "2026-06-22",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Production Talent, Planning & Strategy Lead",
+   "company": "Anduril Industries",
+   "location": "Costa Mesa, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5119054007?gh_jid=5119054007",
+   "posted": "2026-06-22",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Senior Systems Analyst, Cost & Receipt Accounting",
+   "company": "Anduril Industries",
+   "location": "Washington, District of Columbia, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5171084007?gh_jid=5171084007",
+   "posted": "2026-06-22",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Senior Systems Analyst, Cost & Receipt Accounting",
+   "company": "Anduril Industries",
+   "location": "Atlanta, Georgia, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5171086007?gh_jid=5171086007",
+   "posted": "2026-06-22",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Data Analyst, Air Dominance & Strike",
+   "company": "Anduril Industries",
+   "location": "Costa Mesa, California, United States; Seattle, Washington, United States; Washington, District of Columbia, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5170039007?gh_jid=5170039007",
+   "posted": "2026-06-21",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Space Special Projects, Research Scientist",
+   "company": "Anduril Industries",
+   "location": "Reston, Virginia, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5169881007?gh_jid=5169881007",
+   "posted": "2026-06-19",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Deployment Manager, Maritime, Air Defense",
+   "company": "Anduril Industries",
+   "location": "Irvine, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5166040007?gh_jid=5166040007",
+   "posted": "2026-06-16",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Program Manager, USMC Air Defense",
+   "company": "Anduril Industries",
+   "location": "Irvine, California, United States; Seattle, Washington, United States; Washington, District of Columbia, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5166160007?gh_jid=5166160007",
+   "posted": "2026-06-16",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Contracts Analyst",
+   "company": "Anduril Industries",
+   "location": "Washington, District of Columbia, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5164917007?gh_jid=5164917007",
+   "posted": "2026-06-15",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Contracts Analyst",
+   "company": "Anduril Industries",
+   "location": "Costa Mesa, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5165326007?gh_jid=5165326007",
+   "posted": "2026-06-15",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Counterintelligence Analyst Lead",
+   "company": "Anduril Industries",
+   "location": "Costa Mesa, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5165171007?gh_jid=5165171007",
+   "posted": "2026-06-15",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Counterintelligence Analyst Lead",
+   "company": "Anduril Industries",
+   "location": "Washington, District of Columbia, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5165154007?gh_jid=5165154007",
+   "posted": "2026-06-15",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Senior Demand & Supply Planner, Air Defense",
+   "company": "Anduril Industries",
+   "location": "Costa Mesa, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5165130007?gh_jid=5165130007",
+   "posted": "2026-06-15",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Senior Demand & Supply Planner, Intelligence Systems",
+   "company": "Anduril Industries",
+   "location": "Costa Mesa, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5165234007?gh_jid=5165234007",
+   "posted": "2026-06-15",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Senior S&OP Planning Analyst",
+   "company": "Anduril Industries",
+   "location": "Costa Mesa, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5165244007?gh_jid=5165244007",
+   "posted": "2026-06-15",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Senior Systems Analyst, Cost & Receipt Accounting",
+   "company": "Anduril Industries",
+   "location": "Seattle, Washington, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5165477007?gh_jid=5165477007",
+   "posted": "2026-06-15",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Senior Systems Analyst, Cost & Receipt Accounting",
+   "company": "Anduril Industries",
+   "location": "Costa Mesa, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5165476007?gh_jid=5165476007",
+   "posted": "2026-06-15",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "S&OP Planning Analyst",
+   "company": "Anduril Industries",
+   "location": "Ashville, Ohio, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5165122007?gh_jid=5165122007",
+   "posted": "2026-06-15",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "S&OP Planning Analyst",
+   "company": "Anduril Industries",
+   "location": "Costa Mesa, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5165241007?gh_jid=5165241007",
+   "posted": "2026-06-15",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Senior Test & Evaluation Engineer, Cyber",
+   "company": "Anduril Industries",
+   "location": "Costa Mesa, California, United States; Reston, Virginia, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5102501007?gh_jid=5102501007",
+   "posted": "2026-06-12",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "2026 Strategic Security Analyst - Early Career Rotation Program",
+   "company": "Anduril Industries",
+   "location": "Costa Mesa, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5159902007?gh_jid=5159902007",
+   "posted": "2026-06-11",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Financial Analyst, Connected Warfare",
+   "company": "Anduril Industries",
+   "location": "Seattle, Washington, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5158862007?gh_jid=5158862007",
+   "posted": "2026-06-11",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Financial Analyst II, Connected Warfare",
+   "company": "Anduril Industries",
+   "location": "Washington, District of Columbia, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5158855007?gh_jid=5158855007",
+   "posted": "2026-06-11",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Financial Analyst II, Connected Warfare",
+   "company": "Anduril Industries",
+   "location": "Costa Mesa, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5158851007?gh_jid=5158851007",
+   "posted": "2026-06-11",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Production Coordinator, Intelligence Systems",
+   "company": "Anduril Industries",
+   "location": "Ashville, Ohio, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5161597007?gh_jid=5161597007",
+   "posted": "2026-06-11",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Senior Financial Analyst",
+   "company": "Anduril Industries",
+   "location": "Waltham, Massachusetts, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5161362007?gh_jid=5161362007",
+   "posted": "2026-06-11",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Warfighting Capability Analyst, Maritime",
+   "company": "Anduril Industries",
+   "location": "Costa Mesa, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5162802007?gh_jid=5162802007",
+   "posted": "2026-06-11",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Warfighting Capability Analyst, Maritime",
+   "company": "Anduril Industries",
+   "location": "Quincy, Massachusetts, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5162800007?gh_jid=5162800007",
+   "posted": "2026-06-11",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Analyst, Corporate Planning & Growth Operations",
+   "company": "Anduril Industries",
+   "location": "Costa Mesa, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5156964007?gh_jid=5156964007",
+   "posted": "2026-06-10",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Classified System Administrator (Active Clearance), Intelligence Systems",
+   "company": "Anduril Industries",
+   "location": "Reston, Virginia, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5160343007?gh_jid=5160343007",
+   "posted": "2026-06-10",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Senior Data & Systems Analyst, EHS",
+   "company": "Anduril Industries",
+   "location": "Atlanta, Georgia, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5161342007?gh_jid=5161342007",
+   "posted": "2026-06-10",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Senior Data & Systems Analyst, EHS",
+   "company": "Anduril Industries",
+   "location": "Washington, District of Columbia, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5161334007?gh_jid=5161334007",
+   "posted": "2026-06-10",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Senior Data & Systems Analyst, EHS",
+   "company": "Anduril Industries",
+   "location": "Boston, Massachusetts, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5161336007?gh_jid=5161336007",
+   "posted": "2026-06-10",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Senior Data & Systems Analyst, EHS",
+   "company": "Anduril Industries",
+   "location": "Costa Mesa, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5161230007?gh_jid=5161230007",
+   "posted": "2026-06-10",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Senior Data & Systems Analyst, EHS",
+   "company": "Anduril Industries",
+   "location": "Ashville, Ohio, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5161346007?gh_jid=5161346007",
+   "posted": "2026-06-10",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Information Systems Security Manager, AD&S",
+   "company": "Anduril Industries",
+   "location": "Ashville, Ohio, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5153488007?gh_jid=5153488007",
+   "posted": "2026-06-09",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Information Systems Security Officer, AD&S",
+   "company": "Anduril Industries",
+   "location": "Ashville, Ohio, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5153471007?gh_jid=5153471007",
+   "posted": "2026-06-09",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Quality Specialist, Intelligence Systems (Second Shift)",
+   "company": "Anduril Industries",
+   "location": "Santa Ana, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5159814007?gh_jid=5159814007",
+   "posted": "2026-06-09",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Quality Specialist, Intelligence Systems (Secret Clearance)",
+   "company": "Anduril Industries",
+   "location": "Santa Ana, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5159824007?gh_jid=5159824007",
+   "posted": "2026-06-09",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Technical Security Program Manager",
+   "company": "Anduril Industries",
+   "location": "Costa Mesa, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5160396007?gh_jid=5160396007",
+   "posted": "2026-06-09",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "lever",
+   "title": "Operations Analyst - US Government Security",
+   "company": "Palantir",
+   "location": "New York, NY",
+   "url": "https://jobs.lever.co/palantir/2df67493-ffb3-4b34-bf3b-88b6750c3ea7",
+   "posted": "2026-06-09",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Financial Analyst, Production",
+   "company": "Anduril Industries",
+   "location": "Costa Mesa, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5155165007?gh_jid=5155165007",
+   "posted": "2026-06-08",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Manager, Enterprise Security Engineering",
+   "company": "Anduril Industries",
+   "location": "Remote",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5159139007?gh_jid=5159139007",
+   "posted": "2026-06-08",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Manager, Enterprise Security Engineering",
+   "company": "Anduril Industries",
+   "location": "Washington, District of Columbia, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5159137007?gh_jid=5159137007",
+   "posted": "2026-06-08",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Quality Specialist, Intelligence Systems (Second Shift)",
+   "company": "Anduril Industries",
+   "location": "Santa Ana, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5159179007?gh_jid=5159179007",
+   "posted": "2026-06-08",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Warfighting Systems Analyst, Maritime",
+   "company": "Anduril Industries",
+   "location": "Costa Mesa, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5158176007?gh_jid=5158176007",
+   "posted": "2026-06-05",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Warfighting Systems Analyst, Maritime",
+   "company": "Anduril Industries",
+   "location": "Quincy, Massachusetts, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5157846007?gh_jid=5157846007",
+   "posted": "2026-06-05",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Senior Legal Counsel, Cybersecurity",
+   "company": "Anduril Industries",
+   "location": "Costa Mesa, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5084942007?gh_jid=5084942007",
+   "posted": "2026-06-04",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Senior Mission Readiness Manager, Intelligence Systems",
+   "company": "Anduril Industries",
+   "location": "Reston, Virginia, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5151877007?gh_jid=5151877007",
+   "posted": "2026-06-04",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Workforce Planning Analyst, Air Dominance & Strike",
+   "company": "Anduril Industries",
+   "location": "Costa Mesa, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5155193007?gh_jid=5155193007",
+   "posted": "2026-06-04",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Senior Automation Engineer, Intelligence Systems",
+   "company": "Anduril Industries",
+   "location": "Costa Mesa, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5154491007?gh_jid=5154491007",
+   "posted": "2026-06-03",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Senior Systems Engineer (Network Test), Intelligence Systems",
+   "company": "Anduril Industries",
+   "location": "Santa Ana, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5151873007?gh_jid=5151873007",
+   "posted": "2026-06-03",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Senior People Data Analyst",
+   "company": "Anduril Industries",
+   "location": "Boston, Massachusetts, United States; Costa Mesa, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5150566007?gh_jid=5150566007",
+   "posted": "2026-06-01",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Security Specialist",
+   "company": "Anduril Industries",
+   "location": "Ashville, Ohio, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5074043007?gh_jid=5074043007",
+   "posted": "2026-05-29",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Technical Security Systems Architecture Manager",
+   "company": "Anduril Industries",
+   "location": "Costa Mesa, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5150568007?gh_jid=5150568007",
+   "posted": "2026-05-29",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Technical Security Systems Architecture Manager",
+   "company": "Anduril Industries",
+   "location": "Washington, District of Columbia, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5150753007?gh_jid=5150753007",
+   "posted": "2026-05-29",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "VP, Chief Security Officer",
+   "company": "Anduril Industries",
+   "location": "Costa Mesa, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5147279007?gh_jid=5147279007",
+   "posted": "2026-05-29",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Head of Aftermarket Strategy & Offering Management",
+   "company": "Anduril Industries",
+   "location": "Costa Mesa, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5148000007?gh_jid=5148000007",
+   "posted": "2026-05-28",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Lead Financial Analyst, AD&S",
+   "company": "Anduril Industries",
+   "location": "Costa Mesa, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5149055007?gh_jid=5149055007",
+   "posted": "2026-05-28",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Regional Physical Security Lead (Northeast)",
+   "company": "Anduril Industries",
+   "location": "Washington, District of Columbia, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5148548007?gh_jid=5148548007",
+   "posted": "2026-05-28",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "lever",
+   "title": "Mobility Tax Analyst",
+   "company": "Palantir",
+   "location": "Palo Alto, CA",
+   "url": "https://jobs.lever.co/palantir/7dc7e7c3-39bf-4f4e-a8eb-e38a4a0af238",
+   "posted": "2026-05-28",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Financial Analyst, Production",
+   "company": "Anduril Industries",
+   "location": "Morrisville, North Carolina, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5147847007?gh_jid=5147847007",
+   "posted": "2026-05-27",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Senior Structures Analyst, Omen",
+   "company": "Anduril Industries",
+   "location": "Costa Mesa, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5147037007?gh_jid=5147037007",
+   "posted": "2026-05-27",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Staff Structures Analyst, Omen",
+   "company": "Anduril Industries",
+   "location": "Costa Mesa, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5147029007?gh_jid=5147029007",
+   "posted": "2026-05-27",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Structures Analyst, Omen",
+   "company": "Anduril Industries",
+   "location": "Costa Mesa, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5147005007?gh_jid=5147005007",
+   "posted": "2026-05-27",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Manager, Product Security Foundations",
+   "company": "Anduril Industries",
+   "location": "Costa Mesa, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5143540007?gh_jid=5143540007",
+   "posted": "2026-05-26",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "COMSEC Custodian, Intelligence Systems",
+   "company": "Anduril Industries",
+   "location": "Santa Ana, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5145295007?gh_jid=5145295007",
+   "posted": "2026-05-22",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "COMSEC Manager, Intelligence Systems",
+   "company": "Anduril Industries",
+   "location": "Santa Ana, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5145230007?gh_jid=5145230007",
+   "posted": "2026-05-22",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Business Operations, Strategic Supply Chain",
+   "company": "Anduril Industries",
+   "location": "Costa Mesa, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5144869007?gh_jid=5144869007",
+   "posted": "2026-05-21",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Senior Analyst, Proposals & Capture",
+   "company": "Anduril Industries",
+   "location": "Costa Mesa, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5143722007?gh_jid=5143722007",
+   "posted": "2026-05-21",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Global Event Security Manager",
+   "company": "Anduril Industries",
+   "location": "Washington, District of Columbia, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5143437007?gh_jid=5143437007",
+   "posted": "2026-05-20",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Global Event Security Manager",
+   "company": "Anduril Industries",
+   "location": "Costa Mesa, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5142518007?gh_jid=5142518007",
+   "posted": "2026-05-20",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Security Business Partner, Frontier Systems",
+   "company": "Anduril Industries",
+   "location": "Costa Mesa, California, United States; Washington, District of Columbia, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5143001007?gh_jid=5143001007",
+   "posted": "2026-05-20",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Technical Security Program Manager",
+   "company": "Anduril Industries",
+   "location": "Washington, District of Columbia, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5143321007?gh_jid=5143321007",
+   "posted": "2026-05-20",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Vendor Strategy & Performance Lead, Design & Construction",
+   "company": "Anduril Industries",
+   "location": "Costa Mesa, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5053237007?gh_jid=5053237007",
+   "posted": "2026-05-20",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Contractor Special Security Officer",
+   "company": "Anduril Industries",
+   "location": "El Segundo, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5141080007?gh_jid=5141080007",
+   "posted": "2026-05-19",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Senior Technical Security Application Engineer, Secured Spaces",
+   "company": "Anduril Industries",
+   "location": "Washington, District of Columbia, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5140162007?gh_jid=5140162007",
+   "posted": "2026-05-18",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Facility Security Officer",
+   "company": "Anduril Industries",
+   "location": "Ashville, Ohio, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5139605007?gh_jid=5139605007",
+   "posted": "2026-05-15",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Operations Analyst (Scenario Design), Discovery",
+   "company": "Anduril Industries",
+   "location": "Costa Mesa, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/4975849007?gh_jid=4975849007",
+   "posted": "2026-05-15",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Manager, Security Software Engineering",
+   "company": "Anduril Industries",
+   "location": "Costa Mesa, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5136167007?gh_jid=5136167007",
+   "posted": "2026-05-12",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Senior Financial Analyst, Maritime & Maneuver Dominance",
+   "company": "Anduril Industries",
+   "location": "Costa Mesa, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5131037007?gh_jid=5131037007",
+   "posted": "2026-05-12",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "lever",
+   "title": "Administrative Business Partner - Security",
+   "company": "Palantir",
+   "location": "Palo Alto, CA",
+   "url": "https://jobs.lever.co/palantir/0bbfd4f4-41ff-4ec6-b73f-5200efd5d4d3",
+   "posted": "2026-05-12",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Lead Program Financial Analyst, AD&S",
+   "company": "Anduril Industries",
+   "location": "Costa Mesa, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5133339007?gh_jid=5133339007",
+   "posted": "2026-05-08",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Strategic Finance",
+   "company": "Anduril Industries",
+   "location": "Boston, Massachusetts, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5133534007?gh_jid=5133534007",
+   "posted": "2026-05-08",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Strategic Finance",
+   "company": "Anduril Industries",
+   "location": "Costa Mesa, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/4700708007?gh_jid=4700708007",
+   "posted": "2026-05-08",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Program Financial Analyst, Autonomous Airpower",
+   "company": "Anduril Industries",
+   "location": "Costa Mesa, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5130014007?gh_jid=5130014007",
+   "posted": "2026-05-06",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Program Security Manager",
+   "company": "Anduril Industries",
+   "location": "Washington, District of Columbia, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5130819007?gh_jid=5130819007",
+   "posted": "2026-05-06",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Facility Security Officer",
+   "company": "Anduril Industries",
+   "location": "Ashville, Ohio, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5128524007?gh_jid=5128524007",
+   "posted": "2026-05-05",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Senior Technical Security Application Engineer, Secured Spaces",
+   "company": "Anduril Industries",
+   "location": "Costa Mesa, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5129624007?gh_jid=5129624007",
+   "posted": "2026-05-05",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Information Security Officer",
+   "company": "Helsing",
+   "location": "Munich",
+   "url": "https://helsing.ai/jobs/4857323101?gh_jid=4857323101",
+   "posted": "2026-05-05",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Information Systems Security Officer, AD&S",
+   "company": "Anduril Industries",
+   "location": "Costa Mesa, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5127232007?gh_jid=5127232007",
+   "posted": "2026-05-04",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Information Systems Security Officer, AD&S",
+   "company": "Anduril Industries",
+   "location": "Washington, District of Columbia, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5128212007?gh_jid=5128212007",
+   "posted": "2026-05-04",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Manager, Japan Communications",
+   "company": "Anduril Industries",
+   "location": "Tokyo, Japan",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5128489007?gh_jid=5128489007",
+   "posted": "2026-05-04",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Senior Systems Engineer, Edge Compute and Communications",
+   "company": "Anduril Industries",
+   "location": "Costa Mesa, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5127967007?gh_jid=5127967007",
+   "posted": "2026-05-04",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Chief Engineer, Intelligence Systems",
+   "company": "Anduril Industries",
+   "location": "Reston, Virginia, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5126292007?gh_jid=5126292007",
+   "posted": "2026-05-01",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Strategic Finance Lead, Air Dominance & Strike",
+   "company": "Anduril Industries",
+   "location": "Costa Mesa, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5121420007?gh_jid=5121420007",
+   "posted": "2026-05-01",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Strategic Real Estate",
+   "company": "Anduril Industries",
+   "location": "Costa Mesa, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5124774007?gh_jid=5124774007",
+   "posted": "2026-04-30",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Strategic Real Estate Operations",
+   "company": "Anduril Industries",
+   "location": "Costa Mesa, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5124776007?gh_jid=5124776007",
+   "posted": "2026-04-30",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Manager, Taiwan Communications",
+   "company": "Anduril Industries",
+   "location": "Taipei, Taiwan",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5124757007?gh_jid=5124757007",
+   "posted": "2026-04-29",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Quality Inspector (Second Shift), Intelligence Systems",
+   "company": "Anduril Industries",
+   "location": "Santa Ana, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5123459007?gh_jid=5123459007",
+   "posted": "2026-04-29",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Financial Analyst, TRS",
+   "company": "Anduril Industries",
+   "location": "Atlanta, Georgia, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5122945007?gh_jid=5122945007",
+   "posted": "2026-04-28",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Head of Security, EME",
+   "company": "Anduril Industries",
+   "location": "London, England, United Kingdom",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5121341007?gh_jid=5121341007",
+   "posted": "2026-04-28",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Technical Operations Engineer, Intelligence Systems",
+   "company": "Anduril Industries",
+   "location": "Reston, Virginia, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5122503007?gh_jid=5122503007",
+   "posted": "2026-04-28",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Associate Director, Finance Strategy and Planning",
+   "company": "Anduril Industries",
+   "location": "Costa Mesa, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5121418007?gh_jid=5121418007",
+   "posted": "2026-04-27",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Quality Specialist, Intelligence Systems (Second Shift)",
+   "company": "Anduril Industries",
+   "location": "Santa Ana, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5119126007?gh_jid=5119126007",
+   "posted": "2026-04-24",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Quality Specialist, Intelligence Systems (Second Shift)",
+   "company": "Anduril Industries",
+   "location": "Santa Ana, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5119122007?gh_jid=5119122007",
+   "posted": "2026-04-24",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Quality Specialist, Intelligence Systems (Secret Clearance)",
+   "company": "Anduril Industries",
+   "location": "Santa Ana, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5120533007?gh_jid=5120533007",
+   "posted": "2026-04-24",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Software Product Manager, Air Defense",
+   "company": "Anduril Industries",
+   "location": "Irvine, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5120927007?gh_jid=5120927007",
+   "posted": "2026-04-24",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Senior Analyst, Proposal and Capture",
+   "company": "Anduril Industries",
+   "location": "Costa Mesa, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5104949007?gh_jid=5104949007",
+   "posted": "2026-04-15",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Strategic Sales Operations Lead, Armory",
+   "company": "Anduril Industries",
+   "location": "Costa Mesa, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5103974007?gh_jid=5103974007",
+   "posted": "2026-04-10",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Strategic Sales Operations Lead, Armory",
+   "company": "Anduril Industries",
+   "location": "Washington, District of Columbia, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5105354007?gh_jid=5105354007",
+   "posted": "2026-04-10",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "AFSIM Operations Analyst, Mission Engineering, Air Dominance & Strike, Active Clearance",
+   "company": "Anduril Industries",
+   "location": "Ashville, Ohio, United States; Costa Mesa, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5103907007?gh_jid=5103907007",
+   "posted": "2026-04-09",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Staff FPGA Engineer, Intelligence Systems",
+   "company": "Anduril Industries",
+   "location": "Reston, Virginia, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5101332007?gh_jid=5101332007",
+   "posted": "2026-04-07",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Growth Operations Analyst, Air Dominance & Strike",
+   "company": "Anduril Industries",
+   "location": "Costa Mesa, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5086187007?gh_jid=5086187007",
+   "posted": "2026-04-03",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Supply Chain Systems Analyst, WMS",
+   "company": "Anduril Industries",
+   "location": "Ashville, Ohio, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5098828007?gh_jid=5098828007",
+   "posted": "2026-04-02",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Director, European Strategic Communications",
+   "company": "Anduril Industries",
+   "location": "Amsterdam, North Holland, Netherlands",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5070548007?gh_jid=5070548007",
+   "posted": "2026-03-31",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Technical Operations Engineer, Intelligence Systems",
+   "company": "Anduril Industries",
+   "location": "Reston, Virginia, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5095630007?gh_jid=5095630007",
+   "posted": "2026-03-31",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "PCB Layout Designer, Intelligence Systems",
+   "company": "Anduril Industries",
+   "location": "Reston, Virginia, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5093330007?gh_jid=5093330007",
+   "posted": "2026-03-30",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "(Senior) Expert Export Control",
+   "company": "Helsing",
+   "location": "Munich",
+   "url": "https://helsing.ai/jobs/4818340101?gh_jid=4818340101",
+   "posted": "2026-03-24",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Operations Analyst, Software Spend",
+   "company": "Anduril Industries",
+   "location": "Costa Mesa, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5076811007?gh_jid=5076811007",
+   "posted": "2026-03-23",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Security Officer",
+   "company": "Helsing",
+   "location": "Munich",
+   "url": "https://helsing.ai/jobs/4816569101?gh_jid=4816569101",
+   "posted": "2026-03-19",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Legal Counsel, Air Defense & Counter Intrusion",
+   "company": "Anduril Industries",
+   "location": "Costa Mesa, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5060161007?gh_jid=5060161007",
+   "posted": "2026-03-16",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Legal Counsel, Air Defense & Counter Intrusion",
+   "company": "Anduril Industries",
+   "location": "Washington, District of Columbia, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5081022007?gh_jid=5081022007",
+   "posted": "2026-03-16",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "COMSEC Manager, Intelligence Systems",
+   "company": "Anduril Industries",
+   "location": "Reston, Virginia, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5066764007?gh_jid=5066764007",
+   "posted": "2026-03-12",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Senior RF Communications Engineer, Space",
+   "company": "Anduril Industries",
+   "location": "Costa Mesa, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5075880007?gh_jid=5075880007",
+   "posted": "2026-03-12",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Hazard Zone Deployment Lead, Air Defense",
+   "company": "Anduril Industries",
+   "location": "Irvine, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5074949007?gh_jid=5074949007",
+   "posted": "2026-03-10",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Manager, Enterprise Security Engineering",
+   "company": "Anduril Industries",
+   "location": "Costa Mesa, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5070618007?gh_jid=5070618007",
+   "posted": "2026-03-10",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Manager, Enterprise Security Engineering",
+   "company": "Anduril Industries",
+   "location": "Seattle, Washington, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5075703007?gh_jid=5075703007",
+   "posted": "2026-03-10",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "lever",
+   "title": "Administrative Business Partner - Security",
+   "company": "Palantir",
+   "location": "New York, NY",
+   "url": "https://jobs.lever.co/palantir/fe2a8c69-49b7-405f-816c-a6c6f894399a",
+   "posted": "2026-03-03",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Protective Intelligence Lead Analyst",
+   "company": "Anduril Industries",
+   "location": "Costa Mesa, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5063493007?gh_jid=5063493007",
+   "posted": "2026-02-27",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Forward Deployed Engineer, Air Defense (FDE)",
+   "company": "Anduril Industries",
+   "location": "Costa Mesa, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5057206007?gh_jid=5057206007",
+   "posted": "2026-02-19",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Senior BOM Engineer, Intelligence Systems (Active Clearance)",
+   "company": "Anduril Industries",
+   "location": "Reston, Virginia, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5053268007?gh_jid=5053268007",
+   "posted": "2026-02-13",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Senior Cost Value Engineer, Intelligence Systems (Active Clearance)",
+   "company": "Anduril Industries",
+   "location": "Reston, Virginia, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5053267007?gh_jid=5053267007",
+   "posted": "2026-02-13",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Senior Supplier Sourcing Engineer, Intelligence Systems (Active Clearance)",
+   "company": "Anduril Industries",
+   "location": "Reston, Virginia, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5053269007?gh_jid=5053269007",
+   "posted": "2026-02-13",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Information Systems Security Manager",
+   "company": "Anduril Industries",
+   "location": "Costa Mesa, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5048775007?gh_jid=5048775007",
+   "posted": "2026-02-10",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Inventory Analyst",
+   "company": "Anduril Industries",
+   "location": "Atlanta, Georgia, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5036204007?gh_jid=5036204007",
+   "posted": "2026-02-10",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "AI Research Engineer - ML Engineering",
+   "company": "Helsing",
+   "location": "Berlin; London; Munich",
+   "url": "https://helsing.ai/jobs/4778869101?gh_jid=4778869101",
+   "posted": "2026-02-10",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Communications Manager, Air Dominance and Strike",
+   "company": "Anduril Industries",
+   "location": "Washington, District of Columbia, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5045999007?gh_jid=5045999007",
+   "posted": "2026-02-09",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Regional Physical Security Lead (SoCal)",
+   "company": "Anduril Industries",
+   "location": "Costa Mesa, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5044338007?gh_jid=5044338007",
+   "posted": "2026-02-09",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Senior PCB Layout Designer, Intelligence Systems",
+   "company": "Anduril Industries",
+   "location": "Reston, Virginia, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5042141007?gh_jid=5042141007",
+   "posted": "2026-02-09",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Senior Security Operations Analyst",
+   "company": "Anduril Industries",
+   "location": "Sydney, New South Wales, Australia",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5047245007?gh_jid=5047245007",
+   "posted": "2026-02-09",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Senior Automation Engineer, Intelligence Systems",
+   "company": "Anduril Industries",
+   "location": "Costa Mesa, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5040926007?gh_jid=5040926007",
+   "posted": "2026-02-02",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Technical Writer, Defense Hardware & Systems",
+   "company": "Anduril Industries",
+   "location": "Costa Mesa, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5039865007?gh_jid=5039865007",
+   "posted": "2026-02-02",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Senior Federal Materials Manager, Aerospace & Defense",
+   "company": "Anduril Industries",
+   "location": "Costa Mesa, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5036023007?gh_jid=5036023007",
+   "posted": "2026-01-28",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Strategic Finance Sr Associate, Connected Warfare",
+   "company": "Anduril Industries",
+   "location": "Washington, District of Columbia, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5035826007?gh_jid=5035826007",
+   "posted": "2026-01-28",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "lever",
+   "title": "Product Reliability Engineer - Defense",
+   "company": "Palantir",
+   "location": "New York, NY",
+   "url": "https://jobs.lever.co/palantir/250f623c-9afb-4c91-b0c0-25d4e83005ec",
+   "posted": "2026-01-27",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "lever",
+   "title": "Product Reliability Engineer - Defense",
+   "company": "Palantir",
+   "location": "Washington, D.C.",
+   "url": "https://jobs.lever.co/palantir/57699414-b373-4a5e-9be8-6fb7de41ea72",
+   "posted": "2026-01-27",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "AI Research Engineer - Foundation Models",
+   "company": "Helsing",
+   "location": "Berlin; London; Munich; Paris",
+   "url": "https://helsing.ai/jobs/4766708101?gh_jid=4766708101",
+   "posted": "2026-01-26",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "BOM Sourcing Engineer, Intelligence Systems & Space (Active Clearance)",
+   "company": "Anduril Industries",
+   "location": "Costa Mesa, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5029722007?gh_jid=5029722007",
+   "posted": "2026-01-21",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Cost Value Engineer, Intelligence Systems & Space (Active Clearance)",
+   "company": "Anduril Industries",
+   "location": "Costa Mesa, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5029726007?gh_jid=5029726007",
+   "posted": "2026-01-21",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Product Sourcing Engineer, Intelligence Systems & Space (Active Clearance)",
+   "company": "Anduril Industries",
+   "location": "Costa Mesa, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5029719007?gh_jid=5029719007",
+   "posted": "2026-01-21",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Senior BOM Sourcing Engineer, Intelligence Systems & Space (Active Clearance)",
+   "company": "Anduril Industries",
+   "location": "Costa Mesa, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5029721007?gh_jid=5029721007",
+   "posted": "2026-01-21",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Senior Cost Value Engineer, Intelligence Systems & Space (Active Clearance)",
+   "company": "Anduril Industries",
+   "location": "Costa Mesa, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5029727007?gh_jid=5029727007",
+   "posted": "2026-01-21",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Senior Procurement Engineer, Intelligence Systems & Space (Active Clearance)",
+   "company": "Anduril Industries",
+   "location": "Costa Mesa, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5029731007?gh_jid=5029731007",
+   "posted": "2026-01-21",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Senior Procurement Engineer, Intelligence Systems & Space (Active Clearance)",
+   "company": "Anduril Industries",
+   "location": "Costa Mesa, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5029730007?gh_jid=5029730007",
+   "posted": "2026-01-21",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Senior Supplier Sourcing Engineer, Intelligence Systems & Space (Active Clearance)",
+   "company": "Anduril Industries",
+   "location": "Costa Mesa, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5029729007?gh_jid=5029729007",
+   "posted": "2026-01-21",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Supplier Sourcing Engineer, Intelligence Systems & Space (Active Clearance)",
+   "company": "Anduril Industries",
+   "location": "Costa Mesa, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5029720007?gh_jid=5029720007",
+   "posted": "2026-01-21",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Strategic Finance",
+   "company": "Anduril Industries",
+   "location": "Washington, District of Columbia, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5027763007?gh_jid=5027763007",
+   "posted": "2026-01-18",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Technical Security Program Manager",
+   "company": "Anduril Industries",
+   "location": "Ashville, Ohio, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5026223007?gh_jid=5026223007",
+   "posted": "2026-01-16",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Lead Financial Analyst, Corporate Finance",
+   "company": "Anduril Industries",
+   "location": "Costa Mesa, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5025967007?gh_jid=5025967007",
+   "posted": "2026-01-15",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Product Manager, Air Defense, Vehicles",
+   "company": "Anduril Industries",
+   "location": "Irvine, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5023386007?gh_jid=5023386007",
+   "posted": "2026-01-14",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Technical Operations Engineer, Air Defense",
+   "company": "Anduril Industries",
+   "location": "Costa Mesa, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5005150007?gh_jid=5005150007",
+   "posted": "2026-01-12",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Senior Product Sourcing Engineer, Intelligence Systems & Space (Active Clearance)",
+   "company": "Anduril Industries",
+   "location": "Costa Mesa, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5019348007?gh_jid=5019348007",
+   "posted": "2026-01-09",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "lever",
+   "title": "Defensive Security Analyst",
+   "company": "Palantir",
+   "location": "Washington, D.C.",
+   "url": "https://jobs.lever.co/palantir/bc803bd5-7793-452d-9ae5-9301ee24615a",
+   "posted": "2026-01-08",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "lever",
+   "title": "Platform Intelligence Engineer",
+   "company": "Palantir",
+   "location": "New York, NY",
+   "url": "https://jobs.lever.co/palantir/a753a9e7-a361-426b-9c25-3cf2488c1730",
+   "posted": "2025-12-15",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Machine Learning Research Engineer",
+   "company": "Anduril Industries",
+   "location": "Washington, District of Columbia, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/4998882007?gh_jid=4998882007",
+   "posted": "2025-12-05",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Deployment Lead, Air Defense",
+   "company": "Anduril Industries",
+   "location": "Irvine, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/4996002007?gh_jid=4996002007",
+   "posted": "2025-12-03",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Information Systems Security Officer",
+   "company": "Anduril Industries",
+   "location": "Irvine, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/4993772007?gh_jid=4993772007",
+   "posted": "2025-12-01",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Supply Chain Master Data Analyst",
+   "company": "Anduril Industries",
+   "location": "Costa Mesa, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/4985350007?gh_jid=4985350007",
+   "posted": "2025-11-18",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Product Operations Technical Specialist, Air Defense",
+   "company": "Anduril Industries",
+   "location": "Irvine, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/4972456007?gh_jid=4972456007",
+   "posted": "2025-11-07",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Manager, Strategic Projects",
+   "company": "Anduril Industries",
+   "location": "Costa Mesa, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/4964602007?gh_jid=4964602007",
+   "posted": "2025-11-02",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Director, Business Development, Maritime (Strategy)",
+   "company": "Anduril Industries",
+   "location": "Washington, District of Columbia, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/4962962007?gh_jid=4962962007",
+   "posted": "2025-10-31",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Production Program Manager, Intelligence Systems",
+   "company": "Anduril Industries",
+   "location": "Santa Ana, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/4927309007?gh_jid=4927309007",
+   "posted": "2025-10-13",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "lever",
+   "title": "Information Systems Security Manager",
+   "company": "Palantir",
+   "location": "New York, NY",
+   "url": "https://jobs.lever.co/palantir/7e29b1cc-7f0d-4b12-b66c-4a2e56738d7e",
+   "posted": "2025-10-13",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Senior Product Sourcing Engineer, Intelligence Systems (Active Clearance)",
+   "company": "Anduril Industries",
+   "location": "Reston, Virginia, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/4936900007?gh_jid=4936900007",
+   "posted": "2025-10-08",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Senior Operations Analyst, Mission Engineering, Air Dominance & Strike, Active Clearance",
+   "company": "Anduril Industries",
+   "location": "Ashville, Ohio, United States; Costa Mesa, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/4925052007?gh_jid=4925052007",
+   "posted": "2025-09-30",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "AI Research Engineer - Reinforcement Learning",
+   "company": "Helsing",
+   "location": "Barcelona; Berlin; London; Munich; Paris",
+   "url": "https://helsing.ai/jobs/4676357101?gh_jid=4676357101",
+   "posted": "2025-09-17",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Information Systems Security Officer",
+   "company": "Anduril Industries",
+   "location": "Seattle, Washington, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/4895526007?gh_jid=4895526007",
+   "posted": "2025-09-16",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "lever",
+   "title": "Operations Analyst - US Government",
+   "company": "Palantir",
+   "location": "Honolulu, HI",
+   "url": "https://jobs.lever.co/palantir/46530906-4822-4cce-ab86-ef7014d8547f",
+   "posted": "2025-08-20",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Strategy & Operations, Production",
+   "company": "Anduril Industries",
+   "location": "Costa Mesa, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/4728436007?gh_jid=4728436007",
+   "posted": "2025-05-07",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Planning Analyst",
+   "company": "Anduril Industries",
+   "location": "Costa Mesa, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/4657698007?gh_jid=4657698007",
+   "posted": "2025-05-02",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "lever",
+   "title": "Technical Program Manager (TPM) - Defense",
+   "company": "Palantir",
+   "location": "Washington, D.C.",
+   "url": "https://jobs.lever.co/palantir/bd16f7ad-3bee-48fd-9902-b3ee9698b608",
+   "posted": "2025-03-10",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "AI Research Engineer - Robotics",
+   "company": "Helsing",
+   "location": "Barcelona; Paris",
+   "url": "https://helsing.ai/jobs/4423924101?gh_jid=4423924101",
+   "posted": "2024-10-14",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "Operations Analyst, Mission Engineering, Air Dominance & Strike, Active Clearance",
+   "company": "Anduril Industries",
+   "location": "Ashville, Ohio, United States; Costa Mesa, California, United States",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/4481618007?gh_jid=4481618007",
+   "posted": "2024-08-19",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "AI Research Engineer - ML & Signal Processing",
+   "company": "Helsing",
+   "location": "Berlin; Munich",
+   "url": "https://helsing.ai/jobs/4372802101?gh_jid=4372802101",
+   "posted": "2024-07-31",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "AI Research Engineer - AI Safety",
+   "company": "Helsing",
+   "location": "Berlin; London; Munich",
+   "url": "https://helsing.ai/jobs/4334849101?gh_jid=4334849101",
+   "posted": "2024-05-08",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "greenhouse",
+   "title": "AI Research Engineer -  Computer Vision",
+   "company": "Helsing",
+   "location": "Berlin; London; Munich",
+   "url": "https://helsing.ai/jobs/4334842101?gh_jid=4334842101",
+   "posted": "2024-05-08",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "lever",
+   "title": "Web Application Developer - Defense",
+   "company": "Palantir",
+   "location": "New York, NY",
+   "url": "https://jobs.lever.co/palantir/6a82fd06-5754-46c2-8214-9ca4cd89fb9d",
+   "posted": "2024-03-05",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "lever",
+   "title": "Web Application Developer - Defense",
+   "company": "Palantir",
+   "location": "Palo Alto, CA",
+   "url": "https://jobs.lever.co/palantir/96e4295f-3af7-48e5-a2c8-74622eaf5587",
+   "posted": "2024-03-05",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "lever",
+   "title": "Web Application Developer - Defense",
+   "company": "Palantir",
+   "location": "Washington, D.C.",
+   "url": "https://jobs.lever.co/palantir/4255e21c-d0f2-4f57-b5db-1f65830d6425",
+   "posted": "2024-01-30",
+   "first_seen": "2026-07-05T18:03:20Z"
+  },
+  {
+   "source": "lever",
+   "title": "Mobility Tax Analyst",
+   "company": "Palantir",
+   "location": "London, United Kingdom",
+   "url": "https://jobs.lever.co/palantir/d879b190-b6a1-41e1-9eca-bf94d36037e1",
+   "posted": "2022-04-07",
+   "first_seen": "2026-07-05T18:03:20Z"
+  }
+ ]
 }
