@@ -48,8 +48,8 @@
 
     <section class="panel span-2" aria-labelledby="h-keywords">
       <div class="panel-head"><h2 id="h-keywords"><span class="idx">01</span>Keyword filters</h2></div>
-      <p class="hint">Whole-word, case-insensitive. A job is dropped if its <strong>title</strong> hits any exclude keyword, and kept only if its <strong>title or company</strong> hits at least one include keyword.</p>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px" class="kw-cols">
+      <p class="hint">Whole-word, case-insensitive. A job is dropped if its <strong>title</strong> hits any exclude keyword; kept only if its <strong>title or company</strong> hits an include keyword; then dropped if its <strong>location</strong> matches no location entry. Jobs with no stated location (common in RSS feeds) pass the location check.</p>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px" class="kw-cols">
         <div>
           <h2 style="margin-bottom:10px;font-size:11px;color:var(--green)">Include</h2>
           <div id="inc-editor"></div>
@@ -57,6 +57,10 @@
         <div>
           <h2 style="margin-bottom:10px;font-size:11px;color:var(--red)">Exclude</h2>
           <div id="exc-editor"></div>
+        </div>
+        <div>
+          <h2 style="margin-bottom:10px;font-size:11px;color:var(--amber)">Locations</h2>
+          <div id="loc-editor"></div>
         </div>
       </div>
     </section>
@@ -150,8 +154,9 @@
   document.getElementById("edit-link").href = repoUrl + "/edit/" + R.branch + "/config.json";
 
   var DEFAULT_CONFIG = {
-    include_keywords: ["defence", "defense", "security", "intelligence", "policy"],
-    exclude_keywords: ["software engineer"],
+    include_locations: ["London", "Greater London", "Madrid"],
+    include_keywords: ["defence", "defense", "national security", "intelligence", "policy"],
+    exclude_keywords: ["engineer", "engineering", "developer", "software"],
     sources: {
       usajobs: { enabled: true, keywords: ["national security"], results_per_keyword: 25 },
       greenhouse: { enabled: true, boards: ["andurilindustries"] },
@@ -164,6 +169,7 @@
 
   function normalize(c) {
     c = (c && typeof c === "object") ? c : {};
+    c.include_locations = Array.isArray(c.include_locations) ? c.include_locations : [];
     c.include_keywords = Array.isArray(c.include_keywords) ? c.include_keywords : [];
     c.exclude_keywords = Array.isArray(c.exclude_keywords) ? c.exclude_keywords : [];
     c.sources = (c.sources && typeof c.sources === "object") ? c.sources : {};
@@ -313,6 +319,8 @@
       { tone: "include", placeholder: "ADD INCLUDE KEYWORD" });
     tagEditor(document.getElementById("exc-editor"), config.exclude_keywords,
       { tone: "exclude", placeholder: "ADD EXCLUDE KEYWORD" });
+    tagEditor(document.getElementById("loc-editor"), config.include_locations,
+      { tone: "include", placeholder: "ADD LOCATION" });
     tagEditor(document.getElementById("usajobs-kw"), config.sources.usajobs.keywords,
       { tone: "include", placeholder: "ADD SEARCH KEYWORD" });
     tagEditor(document.getElementById("gh-boards"), config.sources.greenhouse.boards,

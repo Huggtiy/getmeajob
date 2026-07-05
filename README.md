@@ -37,8 +37,9 @@ hard-coded in Python.
 
 ```jsonc
 {
+  "include_locations": ["London", "Madrid", ...],   // drop if LOCATION matches none; empty/unstated locations pass
   "include_keywords": ["defence", "policy", ...],   // keep if TITLE+COMPANY matches any (whole-word, case-insensitive)
-  "exclude_keywords": ["software engineer", ...],   // drop if TITLE matches any (checked first)
+  "exclude_keywords": ["engineer", "software", ...],// drop if TITLE matches any (checked first)
   "sources": {
     "usajobs":    { "enabled": true, "keywords": ["national security"], "results_per_keyword": 25 },
     "greenhouse": { "enabled": true, "boards": ["andurilindustries"] },      // boards.greenhouse.io/<token>
@@ -51,6 +52,10 @@ hard-coded in Python.
 Notes:
 
 * An **empty include list keeps everything**; excludes always win over includes.
+* Location filtering only applies to jobs that state a location — RSS items
+  usually don't, so they pass and show a blank location on the board.
+* `usajobs` ships **disabled**: US federal roles almost always require US
+  citizenship. Flip it on from the config page if that ever changes.
 * Every fetcher returns the same standard dict:
   `{source, title, company, location, url, posted}` — `posted` is
   `YYYY-MM-DD` or `""`.

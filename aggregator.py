@@ -10,7 +10,10 @@ Pipeline (all driven by config.json — no keywords or sources live in code):
 Filter rules (case-insensitive, whole-word):
   * drop a job if its TITLE matches any exclude keyword;
   * keep it if TITLE + COMPANY matches any include keyword
-    (an empty include list keeps everything).
+    (an empty include list keeps everything);
+  * drop a job whose LOCATION matches no include_locations entry —
+    unless the location is empty/unstated (common in RSS feeds), which
+    is kept so feed-only sources aren't wiped out.
 
 jobs.db remembers every URL ever seen, so "new this run" stays meaningful
 between daily GitHub Actions runs. docs/jobs.json always contains the full
@@ -79,12 +82,14 @@ def dedup_by_url(jobs):
     return list(seen.values())
 
 
-def filter_jobs(jobs, include_pats, exclude_pats):
+def filter_jobs(jobs, include_pats, exclude_pats, location_pats):
     kept = []
     for job in jobs:
         if matches_any(exclude_pats, job["title"]):
             continue
         if include_pats and not matches_any(include_pats, f"{job['title']} {job['company']}"):
+            continue
+        if location_pats and job["location"] and not matches_any(location_pats, job["location"]):
             continue
         kept.append(job)
     return kept
@@ -169,11 +174,12 @@ def main():
     config = load_config()
     include_pats = compile_patterns(config.get("include_keywords", []))
     exclude_pats = compile_patterns(config.get("exclude_keywords", []))
+    location_pats = compile_patterns(config.get("include_locations", []))
 
     print("=== SITREP // defence & security job aggregation ===")
     raw_jobs, counts = fetch_all(config)
     unique_jobs = dedup_by_url(raw_jobs)
-    filtered = filter_jobs(unique_jobs, include_pats, exclude_pats)
+    filtered = filter_jobs(unique_jobs, include_pats, exclude_pats, location_pats)
 
     conn = open_db()
     new_jobs = store_jobs(conn, filtered, now_iso)
