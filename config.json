@@ -1,0 +1,114 @@
+{
+  "include_keywords": [
+    "defence",
+    "defense",
+    "security",
+    "national security",
+    "intelligence",
+    "policy",
+    "public policy",
+    "foreign policy",
+    "geopolitics",
+    "geopolitical",
+    "strategy",
+    "strategic",
+    "strategic communications",
+    "communications",
+    "public affairs",
+    "government affairs",
+    "government relations",
+    "international relations",
+    "international affairs",
+    "diplomacy",
+    "NATO",
+    "cyber",
+    "cybersecurity",
+    "cyber security",
+    "analyst",
+    "research",
+    "researcher",
+    "think tank",
+    "export control",
+    "resilience",
+    "counter-terrorism",
+    "counterterrorism",
+    "OSINT",
+    "war studies"
+  ],
+  "exclude_keywords": [
+    "software engineer",
+    "software developer",
+    "full stack",
+    "frontend",
+    "front end",
+    "backend",
+    "back end",
+    "electrical engineer",
+    "mechanical engineer",
+    "hardware engineer",
+    "firmware",
+    "embedded engineer",
+    "security engineer",
+    "machine learning engineer",
+    "data engineer",
+    "test engineer",
+    "quality engineer",
+    "devops",
+    "site reliability",
+    "machinist",
+    "welder",
+    "technician",
+    "manufacturing",
+    "warehouse",
+    "facilities",
+    "recruiter",
+    "talent acquisition",
+    "account executive",
+    "sales development",
+    "customer success",
+    "security guard",
+    "intern",
+    "internship",
+    "apprentice",
+    "nurse",
+    "physician",
+    "dentist",
+    "chef",
+    "cook",
+    "driver"
+  ],
+  "sources": {
+    "usajobs": {
+      "enabled": true,
+      "keywords": [
+        "national security",
+        "intelligence analyst",
+        "foreign affairs",
+        "public affairs",
+        "policy analyst",
+        "strategic communications"
+      ],
+      "results_per_keyword": 25
+    },
+    "greenhouse": {
+      "enabled": true,
+      "boards": [
+        "andurilindustries",
+        "helsing"
+      ]
+    },
+    "lever": {
+      "enabled": true,
+      "companies": [
+        "palantir"
+      ]
+    },
+    "rss": {
+      "enabled": true,
+      "feeds": [
+        ["ReliefWeb Jobs", "https://reliefweb.int/jobs/rss.xml"],
+        ["EURACTIV Jobs", "https://jobs.euractiv.com/rss.xml"]
+      ]
+    }
+  }
+}
