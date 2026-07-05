@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SITREP — Defence &amp; Security Job Watch</title>
+<meta name="description" content="Personal defence, national security and policy job aggregator. APIs and RSS only.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='26' fill='none' stroke='%23e2a63d' stroke-width='4'/%3E%3Cpath d='M32 6v14M32 44v14M6 32h14M44 32h14' stroke='%23e2a63d' stroke-width='4'/%3E%3Ccircle cx='32' cy='32' r='5' fill='%23e2a63d'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="classbar">Unclassified&nbsp;//&nbsp;Open-source aggregation&nbsp;//&nbsp;Personal use</div>
+
+<div class="wrap">
+  <header class="site-head">
+    <div class="brand">
+      <svg class="reticle" width="64" height="64" viewBox="0 0 64 64" aria-hidden="true">
+        <circle cx="32" cy="32" r="27" fill="none" stroke="#2f3b49" stroke-width="1.5"/>
+        <circle cx="32" cy="32" r="17" fill="none" stroke="#2f3b49" stroke-width="1"/>
+        <path d="M32 1v10M32 53v10M1 32h10M53 32h10" stroke="#2f3b49" stroke-width="1.5"/>
+        <g class="sweep">
+          <line x1="32" y1="32" x2="32" y2="6" stroke="#e2a63d" stroke-width="1.5"/>
+          <circle cx="32" cy="12" r="2" fill="#e2a63d"/>
+        </g>
+        <circle cx="32" cy="32" r="2.5" fill="#e2a63d"/>
+      </svg>
+      <div>
+        <h1>SIT<span class="slash">//</span>REP</h1>
+        <p class="tagline">Defence &amp; security &mdash; job watch</p>
+      </div>
+    </div>
+    <nav class="site-nav" aria-label="Site">
+      <a href="./" aria-current="page">01&nbsp;Board</a>
+      <a href="config.html">02&nbsp;Config</a>
+    </nav>
+  </header>
+
+  <div class="status-strip">
+    <span id="last-updated">Last updated: &mdash;</span>
+    <span>Refreshes daily <strong>07:00&nbsp;UTC</strong> via GitHub Actions</span>
+  </div>
+
+  <main>
+    <div class="controls" id="controls" hidden>
+      <div class="search-cell">
+        <label for="q" class="sr-only" style="position:absolute;left:-9999px">Search jobs</label>
+        <input type="search" id="q" placeholder="SEARCH TITLE / COMPANY / LOCATION&hellip;" autocomplete="off">
+      </div>
+      <select id="f-source" aria-label="Filter by source"><option value="">ALL SOURCES</option></select>
+      <select id="f-company" aria-label="Filter by company"><option value="">ALL COMPANIES</option></select>
+      <span class="count-readout" id="count" aria-live="polite"></span>
+    </div>
+
+    <ol class="jobs" id="job-list"></ol>
+    <div id="empty" hidden></div>
+  </main>
+
+  <footer class="site-foot">
+    <span>APIs &amp; RSS only &mdash; no scraping</span>
+    <span><a id="repo-link" href="#">Repository</a> &middot; <a id="actions-link" href="#">Action runs</a></span>
+  </footer>
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  // Derive owner/repo from the github.io URL so links work wherever this
+  // repo is forked or renamed. Fallback used for local previews only.
+  function repoInfo() {
+    var host = location.hostname;
+    var seg = location.pathname.split("/").filter(Boolean);
+    if (host.endsWith(".github.io") && seg.length > 0) {
+      return { owner: host.split(".")[0], repo: seg[0], branch: "main" };
+    }
+    if (host.endsWith(".github.io")) {
+      return { owner: host.split(".")[0], repo: host, branch: "main" };
+    }
+    return { owner: "huggtiy", repo: "defence-job-aggregator", branch: "main" };
+  }
+
+  var R = repoInfo();
+  var repoUrl = "https://github.com/" + R.owner + "/" + R.repo;
+  document.getElementById("repo-link").href = repoUrl;
+  document.getElementById("actions-link").href = repoUrl + "/actions";
+
+  var state = { jobs: [], generatedAt: null, q: "", source: "", company: "" };
+
+  var listEl = document.getElementById("job-list");
+  var emptyEl = document.getElementById("empty");
+  var countEl = document.getElementById("count");
+
+  function esc(s) { return String(s == null ? "" : s); }
+
+  function fmtDate(iso) {
+    var d = esc(iso).slice(0, 10);
+    return /^\d{4}-\d{2}-\d{2}$/.test(d) ? d : "";
+  }
+
+  function relTime(iso) {
+    var t = Date.parse(iso);
+    if (isNaN(t)) return "";
+    var mins = Math.round((Date.now() - t) / 60000);
+    if (mins < 2) return "just now";
+    if (mins < 90) return mins + " min ago";
+    var hrs = Math.round(mins / 60);
+    if (hrs < 36) return hrs + " h ago";
+    return Math.round(hrs / 24) + " d ago";
+  }
+
+  function isNew(job) {
+    if (!job.first_seen || !state.generatedAt) return false;
+    var seen = Date.parse(job.first_seen), gen = Date.parse(state.generatedAt);
+    if (isNaN(seen) || isNaN(gen)) return false;
+    return (gen - seen) < 48 * 3600 * 1000; // first seen within the last two runs
+  }
+
+  function showEmpty(html) {
+    listEl.textContent = "";
+    emptyEl.innerHTML = html;
+    emptyEl.hidden = false;
+  }
+
+  function emptyStateNoData() {
+    showEmpty(
+      '<div class="empty-state"><h2>No job data yet</h2><ol>' +
+      '<li>Open the <a href="' + repoUrl + '/actions">Actions tab</a> of the repository.</li>' +
+      '<li>Select the <code>Aggregate jobs</code> workflow and press <code>Run workflow</code>.</li>' +
+      '<li>Wait ~1 minute for it to commit <code>docs/jobs.json</code>, then refresh this page.</li>' +
+      '<li>It also runs by itself every day at 07:00 UTC, and whenever <code>config.json</code> changes on <code>main</code>.</li>' +
+      "</ol></div>");
+  }
+
+  function render() {
+    var q = state.q.trim().toLowerCase();
+    var rows = state.jobs.filter(function (j) {
+      if (state.source && j.source !== state.source) return false;
+      if (state.company && j.company !== state.company) return false;
+      if (q) {
+        var hay = (j.title + " " + j.company + " " + j.location).toLowerCase();
+        if (hay.indexOf(q) === -1) return false;
+      }
+      return true;
+    });
+
+    countEl.textContent = rows.length + " / " + state.jobs.length + " roles";
+    listEl.textContent = "";
+    emptyEl.hidden = true;
+
+    if (state.jobs.length === 0) { emptyStateNoData(); return; }
+    if (rows.length === 0) {
+      showEmpty('<div class="empty-state"><h2>No matches</h2><ol><li>No roles match the current filters — clear the search box or reset the source/company filters.</li></ol></div>');
+      return;
+    }
+
+    var frag = document.createDocumentFragment();
+    rows.forEach(function (j) {
+      var li = document.createElement("li");
+      li.className = "job" + (isNew(j) ? " is-new" : "");
+
+      var main = document.createElement("div");
+      main.className = "job-main";
+
+      var a = document.createElement("a");
+      a.className = "job-title";
+      a.href = j.url;
+      a.target = "_blank";
+      a.rel = "noopener noreferrer";
+      a.textContent = j.title || "(untitled role)";
+      main.appendChild(a);
+
+      if (isNew(j)) {
+        var tag = document.createElement("span");
+        tag.className = "job-new-tag";
+        tag.textContent = "NEW";
+        main.appendChild(tag);
+      }
+
+      var meta = document.createElement("div");
+      meta.className = "job-meta";
+      meta.textContent = j.company || "—";
+      if (j.location) {
+        var sep = document.createElement("span");
+        sep.className = "sep";
+        sep.textContent = "//";
+        meta.appendChild(sep);
+        meta.appendChild(document.createTextNode(j.location));
+      }
+      main.appendChild(meta);
+
+      var badge = document.createElement("span");
+      badge.className = "badge";
+      badge.setAttribute("data-source", esc(j.source));
+      badge.textContent = j.source;
+
+      var date = document.createElement("time");
+      date.className = "job-date";
+      date.textContent = fmtDate(j.posted) || fmtDate(j.first_seen) || "";
+
+      li.appendChild(main);
+      li.appendChild(badge);
+      li.appendChild(date);
+      frag.appendChild(li);
+    });
+    listEl.appendChild(frag);
+  }
+
+  function fillSelect(el, values) {
+    values.forEach(function (v) {
+      var opt = document.createElement("option");
+      opt.value = v;
+      opt.textContent = v;
+      el.appendChild(opt);
+    });
+  }
+
+  function boot(payload) {
+    state.jobs = Array.isArray(payload.jobs) ? payload.jobs : [];
+    state.generatedAt = payload.generated_at || null;
+
+    if (state.generatedAt) {
+      document.getElementById("last-updated").innerHTML =
+        "Last updated: <strong>" + fmtDate(state.generatedAt) + " " +
+        esc(state.generatedAt).slice(11, 16) + " UTC</strong> (" + relTime(state.generatedAt) + ")";
+    }
+
+    var sources = [], companies = [];
+    state.jobs.forEach(function (j) {
+      if (j.source && sources.indexOf(j.source) === -1) sources.push(j.source);
+      if (j.company && companies.indexOf(j.company) === -1) companies.push(j.company);
+    });
+    sources.sort();
+    companies.sort(function (a, b) { return a.localeCompare(b); });
+    fillSelect(document.getElementById("f-source"), sources);
+    fillSelect(document.getElementById("f-company"), companies);
+
+    document.getElementById("controls").hidden = false;
+    render();
+  }
+
+  document.getElementById("q").addEventListener("input", function (e) { state.q = e.target.value; render(); });
+  document.getElementById("f-source").addEventListener("change", function (e) { state.source = e.target.value; render(); });
+  document.getElementById("f-company").addEventListener("change", function (e) { state.company = e.target.value; render(); });
+
+  fetch("jobs.json", { cache: "no-store" })
+    .then(function (r) { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
+    .then(boot)
+    .catch(function () { emptyStateNoData(); });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SITREP — Configuration</title>
+<meta name="description" content="Configuration builder for the defence & security job aggregator.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='26' fill='none' stroke='%23e2a63d' stroke-width='4'/%3E%3Cpath d='M32 6v14M32 44v14M6 32h14M44 32h14' stroke='%23e2a63d' stroke-width='4'/%3E%3Ccircle cx='32' cy='32' r='5' fill='%23e2a63d'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="classbar">Unclassified&nbsp;//&nbsp;Collection tasking&nbsp;//&nbsp;config.json builder</div>
+
+<div class="wrap">
+  <header class="site-head">
+    <div class="brand">
+      <svg class="reticle" width="64" height="64" viewBox="0 0 64 64" aria-hidden="true">
+        <circle cx="32" cy="32" r="27" fill="none" stroke="#2f3b49" stroke-width="1.5"/>
+        <circle cx="32" cy="32" r="17" fill="none" stroke="#2f3b49" stroke-width="1"/>
+        <path d="M32 1v10M32 53v10M1 32h10M53 32h10" stroke="#2f3b49" stroke-width="1.5"/>
+        <g class="sweep">
+          <line x1="32" y1="32" x2="32" y2="6" stroke="#e2a63d" stroke-width="1.5"/>
+          <circle cx="32" cy="12" r="2" fill="#e2a63d"/>
+        </g>
+        <circle cx="32" cy="32" r="2.5" fill="#e2a63d"/>
+      </svg>
+      <div>
+        <h1>SIT<span class="slash">//</span>REP</h1>
+        <p class="tagline">Configuration &mdash; collection tasking</p>
+      </div>
+    </div>
+    <nav class="site-nav" aria-label="Site">
+      <a href="./">01&nbsp;Board</a>
+      <a href="config.html" aria-current="page">02&nbsp;Config</a>
+    </nav>
+  </header>
+
+  <div class="status-strip">
+    <span id="load-status">Loading current config&hellip;</span>
+    <span>Edits apply after committing <strong>config.json</strong> to <strong>main</strong></span>
+  </div>
+
+  <main class="config-grid">
+
+    <section class="panel span-2" aria-labelledby="h-keywords">
+      <div class="panel-head"><h2 id="h-keywords"><span class="idx">01</span>Keyword filters</h2></div>
+      <p class="hint">Whole-word, case-insensitive. A job is dropped if its <strong>title</strong> hits any exclude keyword, and kept only if its <strong>title or company</strong> hits at least one include keyword.</p>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px" class="kw-cols">
+        <div>
+          <h2 style="margin-bottom:10px;font-size:11px;color:var(--green)">Include</h2>
+          <div id="inc-editor"></div>
+        </div>
+        <div>
+          <h2 style="margin-bottom:10px;font-size:11px;color:var(--red)">Exclude</h2>
+          <div id="exc-editor"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel" aria-labelledby="h-usajobs">
+      <div class="panel-head">
+        <h2 id="h-usajobs"><span class="idx">02</span>USAJobs</h2>
+        <label class="switch"><input type="checkbox" id="t-usajobs"><span class="track"></span><span class="switch-label">Enabled</span></label>
+      </div>
+      <p class="hint">Official US federal jobs API. Needs the <code>USAJOBS_API_KEY</code> and <code>USAJOBS_EMAIL</code> repo secrets — free key from <a href="https://developer.usajobs.gov/APIRequest" target="_blank" rel="noopener">developer.usajobs.gov</a>. Skipped gracefully if unset.</p>
+      <div id="usajobs-kw"></div>
+      <div class="field-row">
+        <label for="usajobs-rpk">Results per keyword</label>
+        <input type="number" id="usajobs-rpk" min="1" max="500" step="1">
+      </div>
+    </section>
+
+    <section class="panel" aria-labelledby="h-greenhouse">
+      <div class="panel-head">
+        <h2 id="h-greenhouse"><span class="idx">03</span>Greenhouse</h2>
+        <label class="switch"><input type="checkbox" id="t-greenhouse"><span class="track"></span><span class="switch-label">Enabled</span></label>
+      </div>
+      <p class="hint">Public board API, no key. The board token is the last part of a company&rsquo;s <code>boards.greenhouse.io/&lt;token&gt;</code> or <code>job-boards.greenhouse.io/&lt;token&gt;</code> careers URL.</p>
+      <div id="gh-boards"></div>
+    </section>
+
+    <section class="panel" aria-labelledby="h-lever">
+      <div class="panel-head">
+        <h2 id="h-lever"><span class="idx">04</span>Lever</h2>
+        <label class="switch"><input type="checkbox" id="t-lever"><span class="track"></span><span class="switch-label">Enabled</span></label>
+      </div>
+      <p class="hint">Public postings API, no key. The company slug is the last part of a <code>jobs.lever.co/&lt;company&gt;</code> careers URL (e.g. <code>palantir</code>).</p>
+      <div id="lever-companies"></div>
+    </section>
+
+    <section class="panel" aria-labelledby="h-rss">
+      <div class="panel-head">
+        <h2 id="h-rss"><span class="idx">05</span>RSS / Atom feeds</h2>
+        <label class="switch"><input type="checkbox" id="t-rss"><span class="track"></span><span class="switch-label">Enabled</span></label>
+      </div>
+      <p class="hint">Any jobs RSS or Atom feed. The label is shown as the company/origin on the board.</p>
+      <div id="rss-feeds"></div>
+      <button class="btn" type="button" id="add-feed">+ Add feed</button>
+    </section>
+
+    <section class="panel span-2" aria-labelledby="h-save">
+      <div class="panel-head"><h2 id="h-save"><span class="idx">06</span>Save &amp; deploy</h2></div>
+      <p class="hint">GitHub Pages is static, so this page can&rsquo;t write to the repository. Saving is a commit:</p>
+      <ol class="steps">
+        <li>Press <strong>Copy config.json</strong> below.</li>
+        <li>Press <strong>Edit on GitHub</strong>, select everything in the editor, paste, and commit to <code>main</code>.</li>
+        <li>The <code>Aggregate jobs</code> workflow re-runs automatically on that commit and the board refreshes.</li>
+      </ol>
+      <div class="save-row" style="margin-top:16px">
+        <button class="btn primary" type="button" id="copy-btn">Copy config.json</button>
+        <a class="btn" id="edit-link" href="#" target="_blank" rel="noopener">Edit on GitHub &nearr;</a>
+        <span class="save-note" id="copy-note" aria-live="polite"></span>
+      </div>
+      <pre class="json-preview" id="preview" aria-label="Generated config.json"></pre>
+    </section>
+
+  </main>
+
+  <footer class="site-foot">
+    <span>APIs &amp; RSS only &mdash; no scraping</span>
+    <span><a id="repo-link" href="#">Repository</a></span>
+  </footer>
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  function repoInfo() {
+    var host = location.hostname;
+    var seg = location.pathname.split("/").filter(Boolean);
+    // config.html adds a path segment; the repo is always the first one on
+    // a project Pages site (owner.github.io/repo/...).
+    if (host.endsWith(".github.io") && seg.length > 0 && seg[0].indexOf(".") === -1) {
+      return { owner: host.split(".")[0], repo: seg[0], branch: "main" };
+    }
+    if (host.endsWith(".github.io")) {
+      return { owner: host.split(".")[0], repo: host, branch: "main" };
+    }
+    return { owner: "huggtiy", repo: "defence-job-aggregator", branch: "main" };
+  }
+
+  var R = repoInfo();
+  var repoUrl = "https://github.com/" + R.owner + "/" + R.repo;
+  document.getElementById("repo-link").href = repoUrl;
+  document.getElementById("edit-link").href = repoUrl + "/edit/" + R.branch + "/config.json";
+
+  var DEFAULT_CONFIG = {
+    include_keywords: ["defence", "defense", "security", "intelligence", "policy"],
+    exclude_keywords: ["software engineer"],
+    sources: {
+      usajobs: { enabled: true, keywords: ["national security"], results_per_keyword: 25 },
+      greenhouse: { enabled: true, boards: ["andurilindustries"] },
+      lever: { enabled: true, companies: ["palantir"] },
+      rss: { enabled: true, feeds: [] }
+    }
+  };
+
+  var config = null;
+
+  function normalize(c) {
+    c = (c && typeof c === "object") ? c : {};
+    c.include_keywords = Array.isArray(c.include_keywords) ? c.include_keywords : [];
+    c.exclude_keywords = Array.isArray(c.exclude_keywords) ? c.exclude_keywords : [];
+    c.sources = (c.sources && typeof c.sources === "object") ? c.sources : {};
+    var s = c.sources;
+    s.usajobs = s.usajobs || {};
+    s.usajobs.enabled = !!s.usajobs.enabled;
+    s.usajobs.keywords = Array.isArray(s.usajobs.keywords) ? s.usajobs.keywords : [];
+    s.usajobs.results_per_keyword = parseInt(s.usajobs.results_per_keyword, 10) || 25;
+    s.greenhouse = s.greenhouse || {};
+    s.greenhouse.enabled = !!s.greenhouse.enabled;
+    s.greenhouse.boards = Array.isArray(s.greenhouse.boards) ? s.greenhouse.boards : [];
+    s.lever = s.lever || {};
+    s.lever.enabled = !!s.lever.enabled;
+    s.lever.companies = Array.isArray(s.lever.companies) ? s.lever.companies : [];
+    s.rss = s.rss || {};
+    s.rss.enabled = !!s.rss.enabled;
+    s.rss.feeds = Array.isArray(s.rss.feeds) ? s.rss.feeds : [];
+    return c;
+  }
+
+  function syncPreview() {
+    document.getElementById("preview").textContent = JSON.stringify(config, null, 2);
+  }
+
+  /* ---- tag editor ---- */
+  function tagEditor(root, arr, opts) {
+    opts = opts || {};
+    root.textContent = "";
+
+    var tags = document.createElement("div");
+    tags.className = "tags " + (opts.tone === "exclude" ? "tags-exclude" : "tags-include");
+
+    var row = document.createElement("div");
+    row.className = "tag-input-row";
+    var input = document.createElement("input");
+    input.type = "text";
+    input.placeholder = opts.placeholder || "ADD KEYWORD + ENTER";
+    input.setAttribute("aria-label", opts.placeholder || "Add entry");
+    var addBtn = document.createElement("button");
+    addBtn.className = "btn";
+    addBtn.type = "button";
+    addBtn.textContent = "Add";
+    row.appendChild(input);
+    row.appendChild(addBtn);
+
+    function renderTags() {
+      tags.textContent = "";
+      arr.forEach(function (val, i) {
+        var chip = document.createElement("span");
+        chip.className = "tag";
+        chip.appendChild(document.createTextNode(val));
+        var x = document.createElement("button");
+        x.type = "button";
+        x.textContent = "×";
+        x.setAttribute("aria-label", "Remove " + val);
+        x.addEventListener("click", function () {
+          arr.splice(i, 1);
+          renderTags();
+          syncPreview();
+        });
+        chip.appendChild(x);
+        tags.appendChild(chip);
+      });
+      if (arr.length === 0) {
+        var none = document.createElement("span");
+        none.className = "save-note";
+        none.textContent = "(empty)";
+        tags.appendChild(none);
+      }
+    }
+
+    function add() {
+      var v = input.value.trim();
+      if (!v) return;
+      if (arr.indexOf(v) === -1) arr.push(v);
+      input.value = "";
+      renderTags();
+      syncPreview();
+      input.focus();
+    }
+
+    addBtn.addEventListener("click", add);
+    input.addEventListener("keydown", function (e) {
+      if (e.key === "Enter" || e.key === ",") { e.preventDefault(); add(); }
+      if (e.key === "Backspace" && input.value === "" && arr.length) {
+        arr.pop();
+        renderTags();
+        syncPreview();
+      }
+    });
+
+    renderTags();
+    root.appendChild(tags);
+    root.appendChild(row);
+  }
+
+  /* ---- feeds editor ---- */
+  function renderFeeds() {
+    var root = document.getElementById("rss-feeds");
+    var feeds = config.sources.rss.feeds;
+    root.textContent = "";
+    feeds.forEach(function (feed, i) {
+      if (!Array.isArray(feed)) feeds[i] = feed = ["", String(feed || "")];
+      var row = document.createElement("div");
+      row.className = "feed-row";
+
+      var label = document.createElement("input");
+      label.type = "text";
+      label.placeholder = "LABEL";
+      label.value = feed[0] || "";
+      label.setAttribute("aria-label", "Feed label");
+      label.addEventListener("input", function () { feed[0] = label.value; syncPreview(); });
+
+      var url = document.createElement("input");
+      url.type = "url";
+      url.placeholder = "https://example.org/jobs/rss.xml";
+      url.value = feed[1] || "";
+      url.setAttribute("aria-label", "Feed URL");
+      url.addEventListener("input", function () { feed[1] = url.value; syncPreview(); });
+
+      var del = document.createElement("button");
+      del.type = "button";
+      del.className = "icon-btn";
+      del.textContent = "×";
+      del.setAttribute("aria-label", "Remove feed " + (feed[0] || i + 1));
+      del.addEventListener("click", function () {
+        feeds.splice(i, 1);
+        renderFeeds();
+        syncPreview();
+      });
+
+      row.appendChild(label);
+      row.appendChild(url);
+      row.appendChild(del);
+      root.appendChild(row);
+    });
+  }
+
+  function bindToggle(id, obj) {
+    var el = document.getElementById(id);
+    el.checked = !!obj.enabled;
+    el.addEventListener("change", function () { obj.enabled = el.checked; syncPreview(); });
+  }
+
+  function buildForm() {
+    tagEditor(document.getElementById("inc-editor"), config.include_keywords,
+      { tone: "include", placeholder: "ADD INCLUDE KEYWORD" });
+    tagEditor(document.getElementById("exc-editor"), config.exclude_keywords,
+      { tone: "exclude", placeholder: "ADD EXCLUDE KEYWORD" });
+    tagEditor(document.getElementById("usajobs-kw"), config.sources.usajobs.keywords,
+      { tone: "include", placeholder: "ADD SEARCH KEYWORD" });
+    tagEditor(document.getElementById("gh-boards"), config.sources.greenhouse.boards,
+      { tone: "include", placeholder: "ADD BOARD TOKEN" });
+    tagEditor(document.getElementById("lever-companies"), config.sources.lever.companies,
+      { tone: "include", placeholder: "ADD COMPANY SLUG" });
+
+    bindToggle("t-usajobs", config.sources.usajobs);
+    bindToggle("t-greenhouse", config.sources.greenhouse);
+    bindToggle("t-lever", config.sources.lever);
+    bindToggle("t-rss", config.sources.rss);
+
+    var rpk = document.getElementById("usajobs-rpk");
+    rpk.value = config.sources.usajobs.results_per_keyword;
+    rpk.addEventListener("input", function () {
+      config.sources.usajobs.results_per_keyword = parseInt(rpk.value, 10) || 25;
+      syncPreview();
+    });
+
+    document.getElementById("add-feed").addEventListener("click", function () {
+      config.sources.rss.feeds.push(["", ""]);
+      renderFeeds();
+      syncPreview();
+    });
+
+    renderFeeds();
+    syncPreview();
+  }
+
+  /* ---- copy ---- */
+  document.getElementById("copy-btn").addEventListener("click", function () {
+    var json = JSON.stringify(config, null, 2) + "\n";
+    var note = document.getElementById("copy-note");
+    function ok() {
+      note.textContent = "Copied — now Edit on GitHub, paste over the file, commit to main.";
+      note.className = "save-note ok";
+    }
+    function fail() {
+      note.textContent = "Copy failed — select the JSON below and copy manually.";
+      note.className = "save-note";
+    }
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(json).then(ok, fail);
+    } else { fail(); }
+  });
+
+  /* ---- load current config: raw file first (canonical), then the copy
+     the aggregator writes into docs/, then built-in defaults. ---- */
+  var rawUrl = "https://raw.githubusercontent.com/" + R.owner + "/" + R.repo + "/" + R.branch + "/config.json";
+  var statusEl = document.getElementById("load-status");
+
+  function loaded(c, from) {
+    config = normalize(c);
+    statusEl.innerHTML = "Editing <strong>live</strong> config (" + from + ")";
+    buildForm();
+  }
+
+  fetch(rawUrl, { cache: "no-store" })
+    .then(function (r) { if (!r.ok) throw 0; return r.json(); })
+    .then(function (c) { loaded(c, "repo main branch"); })
+    .catch(function () {
+      fetch("config.json", { cache: "no-store" })
+        .then(function (r) { if (!r.ok) throw 0; return r.json(); })
+        .then(function (c) { loaded(c, "last aggregator run"); })
+        .catch(function () { loaded(DEFAULT_CONFIG, "built-in defaults — repo copy unreachable"); });
+    });
+})();
+</script>
+</body>
+</html>
